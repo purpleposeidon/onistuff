@@ -1,0 +1,67 @@
+# THEORY
+
+
+pour magma on metal to make refined metal very efficiently
+    - and ceramic
+    - and refined carbon
+    - sand to glass??
+
+you can just move magma using a pitcher pump
+    - the magma won't heat the surroundings unless the dupes drop it
+        * But it seems maybe not that much heat loss; you might want a high priority bottle emptier
+    - So you can do various refinements very easily.
+        * Melting metal ore gets you the liquid at 100% mass
+        * If the liquid freezes but is too small to make a tile, it becomes an item & preserves the mass
+        * You could use this to create & destroy tiles endlessly, costing heat only....
+
+sweepy can sweep liquid tiles
+    - The liquids get their heat reset
+    - Aww yiss, room temperature magma
+
+solids that melt into other solids on a conveyor rail will turn into solid tiles
+    - They are placed ontop of the tile the rail is on...
+    - Destroys fluids
+    - Piles on top of solids, up as high as you like
+    - Are there any solids that transmute via freezing??
+
+falling sand can combine mass; probably just low-mass stuff
+    - pressure plate can measure tiles above it; this allows for sAND gates!
+
+conveyor loaders output 20kg of stuff at a time.
+    - But it will output less if that's all it has
+    - The storage bin's capacity can be capped to down to 1 kg.
+    - This allows moving 1kg bubbles through conveyor rails
+    - You can make a mass divider having a storage bin with capped mass between two sweepers.
+
+
+# APPLICATION
+
+Making sand tiles:
+    1. Dropping the sand from above isn't going to work very well. Whatever tile you're mining, the contents are probably going to end up in the sand as an ugly burried object, unless you have some really tedious workarounds.
+    2. So, you should build up from below.
+    3. Also you might want to put some conduit in your sand, but can't 'cuz it's a natural tile. Seeing how annoying it is to place sand, it would be wise to cram everything where the sand is going to end up, just in case you need it. Don't leave home without your pliers mod!
+    4. Make a horizontal row of low-conductance material, namely diamond tiles, and run conveyors through it, and wrap it with insulated tiles. This will be your heatsink.
+    5. Make a vacuum chamber with a bottle emptier, where magma will get dumped & touch an exposed end of the heat sink.
+    6. Load the conveyor rail from the mass divider.
+    7. Run the rail over the heat sink, and at the other end, put a conveyor bridge leading into a lone conveyor rail. This will get all your sand to queue and clog.
+    8. Since each bit of sand on the conveyor rail is only 1 kg, it will heat up very quickly. Dump the magma, and you'll get the sand.
+    9. The sand will be pretty hot, which won't matter because there's so little of it.
+    10. This will leave empty bubbles of nothingness on the conveyor rail, which you can drain.
+
+Refining natural tiles:
+    1. Just empty magma bottles ontop of raw tiles you want to process.
+    2. You'll want it to be thermally isolated, of course. Mine out vacuum around it.
+    3. Possibilities:
+        - Clay to ceramic (doubled efficiency!)
+        - Coal to refined carbon
+        - Fertilizer to dirt
+        - Dirt to sand
+        - Sand to molten glass
+        - Metal ore to refined liquid metal (double usual, quadruple the crusher! But it must be drip-cooled.)
+    4. If it makes a liquid, sweepy can cool it for you. [Untested.]
+
+Ceramic Turbine:
+    1. The natural tiles created this way are necessarily quite hot.
+    2. Since they can stack up through tiles, you can put them into the hotbox of a boiler.
+    3. You can double your heat recovery by mining *after* it has cooled.
+
